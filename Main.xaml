@@ -89,7 +89,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Testing with    adsasdgit&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Branch&quot;]" />
     <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="642,129.33333333333334" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
     <ucas:ListStorageFiles Filter="{x:Null}" TimeoutMS="{x:Null}" Directory="InputFiles" DisplayName="Retrieve sample files" FolderPath="ddutca@ro.soluziona.com's workspace" sap:VirtualizedContainerService.HintSize="642,266" sap2010:WorkflowViewState.IdRef="ListStorageFiles_1" Recursive="True" Result="[sampleFiles]" StorageBucketName="du_Forn Goon Quality_resources" />
     <ui:ForEach x:TypeArguments="ucas:StorageFileInfo" CurrentIndex="{x:Null}" DisplayName="For each sample file" sap:VirtualizedContainerService.HintSize="642,1972.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[sampleFiles]">
