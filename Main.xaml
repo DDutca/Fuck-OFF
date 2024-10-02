@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="716.8,3172" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisasemb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.MLFormCN38CN38FormV1.Bundle;assembly=ExtendedExtractionRe.CustomEntitiesCN 38 Form" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="918,2705.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisasemb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.MLFormCN38CN38FormV1.Bundle;assembly=ExtendedExtractionRe.CustomEntitiesCN 38 Form" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="78">
       <x:String>UiPath.Core.Activities</x:String>
@@ -78,7 +78,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="704,3066.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="704,2640.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ucas:StorageFileInfo)" Name="sampleFiles" />
       <Variable x:TypeArguments="upr:ILocalResource" Name="downloadedFile" />
@@ -89,35 +89,36 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="642,206.4" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ucas:ListStorageFiles Filter="{x:Null}" TimeoutMS="{x:Null}" Directory="InputFiles" DisplayName="Retrieve sample files" FolderPath="ddutca@ro.soluziona.com's workspace" sap:VirtualizedContainerService.HintSize="642,576" sap2010:WorkflowViewState.IdRef="ListStorageFiles_1" Recursive="True" Result="[sampleFiles]" StorageBucketName="du_Forn Goon Quality_resources" />
-    <ui:ForEach x:TypeArguments="ucas:StorageFileInfo" CurrentIndex="{x:Null}" DisplayName="For each sample file" sap:VirtualizedContainerService.HintSize="642,2196.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[sampleFiles]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Testing with git&quot;]" />
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="642,129.33333333333334" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <ucas:ListStorageFiles Filter="{x:Null}" TimeoutMS="{x:Null}" Directory="InputFiles" DisplayName="Retrieve sample files" FolderPath="ddutca@ro.soluziona.com's workspace" sap:VirtualizedContainerService.HintSize="642,266" sap2010:WorkflowViewState.IdRef="ListStorageFiles_1" Recursive="True" Result="[sampleFiles]" StorageBucketName="du_Forn Goon Quality_resources" />
+    <ui:ForEach x:TypeArguments="ucas:StorageFileInfo" CurrentIndex="{x:Null}" DisplayName="For each sample file" sap:VirtualizedContainerService.HintSize="642,1972.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[sampleFiles]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="ucas:StorageFileInfo">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ucas:StorageFileInfo" Name="sampleFile" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608,1977.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608,1753.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="546,183.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[string.Format(&quot;Processing file: {0}&quot;, sampleFile.FileFullPath)]" />
-            <p:ClassifyDocument ApiKey="{x:Null}" ClassificationResults="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" FileInput="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassifierId="ml-classification" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/fba87407-348a-4fb3-8a95-285d40a4f14e/31aa406a-fbc1-45ff-843c-82d7e9849572/du_/api/framework/projects/00000000-0000-0000-0000-000000000000/classifiers/ml-classification/classification/start?api-version=1.0" sap:VirtualizedContainerService.HintSize="546,417.2" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="db526949-b919-ef11-86d2-0022488a55b2">
+            <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="546,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[string.Format(&quot;Processing file: {0}&quot;, sampleFile.FileFullPath)]" />
+            <p:ClassifyDocument ApiKey="{x:Null}" ClassificationResults="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" FileInput="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassifierId="ml-classification" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/fba87407-348a-4fb3-8a95-285d40a4f14e/31aa406a-fbc1-45ff-843c-82d7e9849572/du_/api/framework/projects/00000000-0000-0000-0000-000000000000/classifiers/ml-classification/classification/start?api-version=1.0" sap:VirtualizedContainerService.HintSize="546,266" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="db526949-b919-ef11-86d2-0022488a55b2">
               <p:ClassifyDocument.GptPromptWithVariables>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </p:ClassifyDocument.GptPromptWithVariables>
             </p:ClassifyDocument>
             <ucas:DownloadStorageFile Destination="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Download sample file" FolderPath="ddutca@ro.soluziona.com's workspace" sap:VirtualizedContainerService.HintSize="546,266" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_1" Path="[sampleFile.FileFullPath]" Result="[downloadedFile]" StorageBucketName="du_Forn Goon Quality_resources" />
-            <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasemb:MLFormCN38CN38FormV1" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" DisplayName="Extract Document Data" DocType="f3b2c4ad-d019-ef11-86d2-000d3abd1122" ExtractionResults="[cN38FormDocumentData]" FileInput="[downloadedFile]" sap:VirtualizedContainerService.HintSize="546,416.4" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_2" ProjectId="db526949-b919-ef11-86d2-0022488a55b2">
+            <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasemb:MLFormCN38CN38FormV1" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" DisplayName="Extract Document Data" DocType="f3b2c4ad-d019-ef11-86d2-000d3abd1122" ExtractionResults="[cN38FormDocumentData]" FileInput="[downloadedFile]" sap:VirtualizedContainerService.HintSize="546,342.6666666666667" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_2" ProjectId="db526949-b919-ef11-86d2-0022488a55b2">
               <p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
             </p:ExtractDocumentDataWithDocumentData>
-            <ui:CommentOut DisplayName="Disabled activities" sap:VirtualizedContainerService.HintSize="546,442.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Disabled activities" sap:VirtualizedContainerService.HintSize="546,442.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,339.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
